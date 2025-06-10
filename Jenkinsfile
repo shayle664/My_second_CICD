@@ -2,7 +2,7 @@ pipeline {
     agent { label 'docker-host' }
 
     environment {
-        IMAGE_NAME = "secnd_CICD"
+        IMAGE_NAME = "secnd_cicd"
         IMAGE_TAG = "latest"
         CONTAINER_NAME = "flask-container"
     }
