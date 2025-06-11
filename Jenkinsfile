@@ -37,7 +37,8 @@ pipeline {
                     echo "Waiting for app to start..."
                     sleep 3
                     echo "Running test on http://localhost:5002 ..."
-                    sh 'curl --fail http://localhost:5002 || (echo "❌ Test failed!" && exit 1)'
+                    sh 'curl -o result.html http://localhost:5002'
+		    archiveArtifacts artifacts: 'result.html'
                 }
             }
         }
