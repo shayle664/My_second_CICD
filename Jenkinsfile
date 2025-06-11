@@ -43,6 +43,12 @@ pipeline {
             }
         }
 
+	stage('Push to dockerhub') {
+            steps {
+                echo "Push to dockerhub"
+            }
+        }
+
         stage('Cleanup') {
             steps {
                 script {
