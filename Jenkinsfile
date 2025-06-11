@@ -26,7 +26,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 script {
-                    sh "docker run -d --rm --name ${CONTAINER_NAME} -p 5001:5001 ${IMAGE_NAME}:${IMAGE_TAG}"
+                    sh "docker run -d --rm --name ${CONTAINER_NAME} -p 5002:5002 ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
             }
         }
