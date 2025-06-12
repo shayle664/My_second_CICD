@@ -3,6 +3,7 @@
 This project demonstrates a basic Flask application deployed using a Jenkins CI/CD pipeline and Docker. The pipeline is configured to automatically build, run, test, and optionally push a Docker image to Docker Hub.
 
 ## 📁 Project Structure
+```
 .
 ├── app/
 │ └── app.py # Flask application source code
@@ -12,7 +13,7 @@ This project demonstrates a basic Flask application deployed using a Jenkins CI/
 ├── TASK.md # Task description or planning notes
 ├── temp/ # Temporary folder (usage TBD)
 └── .gitignore # Git ignored files list
-
+```
 
 ## 🧪 App Overview
 
